@@ -13,6 +13,8 @@ type availability struct {
 }
 
 func (s *availability) Run(args []string) (exitCode int) {
+	rules, _ := templateAvailabilityBytes()
+	s.Ui.Output(string(rules))
 	return
 }
 

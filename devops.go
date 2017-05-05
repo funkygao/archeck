@@ -13,6 +13,8 @@ type devops struct {
 }
 
 func (s *devops) Run(args []string) (exitCode int) {
+	rules, _ := templateDevopsBytes()
+	s.Ui.Output(string(rules))
 	return
 }
 

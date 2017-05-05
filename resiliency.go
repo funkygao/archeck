@@ -13,6 +13,8 @@ type resiliency struct {
 }
 
 func (s *resiliency) Run(args []string) (exitCode int) {
+	rules, _ := templateResiliencyBytes()
+	s.Ui.Output(string(rules))
 	return
 }
 

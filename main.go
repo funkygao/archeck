@@ -7,6 +7,8 @@ import (
 	"github.com/funkygao/gocli"
 )
 
+//go:generate go-bindata -nomemcopy -pkg main template/...
+
 var commands map[string]cli.CommandFactory
 
 func init() {
