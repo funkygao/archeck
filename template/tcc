@@ -1,0 +1,8 @@
+Try: finish all biz logic checks
+Try: reserve biz resources
+Confirm: execute real biz logic
+Confirm: no biz logic checks
+Confirm: use only Try:reserved resources
+Confirm: idempotent
+Cancel: release reserved resources
+Cancel: idempotent

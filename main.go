@@ -46,6 +46,13 @@ func init() {
 			}, nil
 		},
 
+		"tcc": func() (cli.Command, error) {
+			return &tcc{
+				Ui:  ui,
+				Cmd: cmd,
+			}, nil
+		},
+
 		"all": func() (cli.Command, error) {
 			return &all{
 				Ui:  ui,
