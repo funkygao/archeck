@@ -46,6 +46,13 @@ func init() {
 			}, nil
 		},
 
+		"all": func() (cli.Command, error) {
+			return &all{
+				Ui:  ui,
+				Cmd: cmd,
+			}, nil
+		},
+
 		"devops": func() (cli.Command, error) {
 			return &devops{
 				Ui:  ui,

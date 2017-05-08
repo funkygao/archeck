@@ -14,7 +14,7 @@ type scalability struct {
 
 func (s *scalability) Run(args []string) (exitCode int) {
 	rules, _ := templateScalabilityBytes()
-	s.Ui.Output(string(rules))
+	displayRules(s.Ui, rules)
 	return
 }
 
