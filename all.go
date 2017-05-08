@@ -26,7 +26,7 @@ func (s *all) Run(args []string) (exitCode int) {
 }
 
 func (s *all) Synopsis() string {
-	return "Run all checklist"
+	return "Run all checklists"
 }
 
 func (s *all) Help() string {

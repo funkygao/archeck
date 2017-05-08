@@ -19,7 +19,7 @@ func (s *tcc) Run(args []string) (exitCode int) {
 }
 
 func (s *tcc) Synopsis() string {
-	return "Try/Confirm/Cancel for distributed microservice consistency"
+	return "Try/Confirm/Cancel for microservice consistency"
 }
 
 func (s *tcc) Help() string {
